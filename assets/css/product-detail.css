@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .logo img {
+  max-width: 100px;
+}
+header .cart-icon {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+header .user-actions a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+nav {
+  background-color: #333;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.product-detail {
+  background-color: #fff;
+  margin: 20px;
+  display: flex;
+}
+.product-detail .product-image {
+  flex: 1;
+}
+.product-detail .product-image img {
+  max-width: 100%;
+}
+.product-detail .product-info {
+  flex: 1;
+  padding: 20px;
+}
+.product-detail .product-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.product-detail .product-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.product-detail .product-info .size-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-detail .product-info .size-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.product-detail .product-info #add-to-cart {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.related-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.related-products .product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.related-products .product-card img {
+  max-width: 100%;
+}
+.related-products .product-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.related-products .product-card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.related-products .product-card .buy-now {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=product-detail.css.map */
