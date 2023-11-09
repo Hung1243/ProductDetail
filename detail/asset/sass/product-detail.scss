@@ -1,37 +1,40 @@
 // Reset some default styles
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-}
-
-.navbar-nav .nav-item {
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(0deg, #000000, #000000),
-      linear-gradient(0deg, #030303, #030303);
-    top: calc(100% - 2px); // Chân dưới
-    left: 0;
-    transition: width 0.3s ease;
+header {
+  .logo {
+    background-color: black;
+    padding: 10px 0;
+    div {
+      display: flex;
+      justify-content: space-between;
+      nav {
+        a {
+          text-decoration: none;
+          color: white;
+          padding: 0 10px;
+        }
+      }
+    }
   }
-
-  &:hover {
-    &:before {
-      width: 100%;
+  .menu {
+    a.nav-item.nav-link.active::after {
+      content: "";
+      height: 3px;
+      width: 42px;
+      background-color: black;
+      position: absolute;
+      bottom: 12px;
+      left: 8px;
     }
   }
 }
-
 .related-products {
   padding: 50px 0;
 
@@ -86,5 +89,22 @@ body {
 
   .card:hover {
     transform: scale(1.05);
+  }
+}
+
+footer {
+  div {
+    div.col-md-4 {
+      width: 30%;
+      h5 {
+        font-weight: bold;
+      }
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+        }
+      }
+    }
   }
 }

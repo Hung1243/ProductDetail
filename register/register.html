@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Product Details</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -31,7 +31,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../css/product-detail.css" />
+    <link rel="stylesheet" href="../css/register.css" />
   </head>
 
   <body>
@@ -74,18 +74,77 @@
       </div>
     </header>
 
-    <!-- Product Detail -->
-    <div id="productDetails" class=""></div>
+    <div class="container">
+      <h2>Register</h2>
+      <form id="frmRegis">
+        <div class="row">
+          <div class="col-6">
+            <p>Email</p>
+            <input class="form-control" id="email" />
+            <p id="error-required-email" class="text text-danger"></p>
+            <p id="error-min-max-length-email" class="text text-danger"></p>
+          </div>
+          <div class="col-6">
+            <p>Name</p>
+            <input class="form-control" id="name" />
+            <p id="error-required-name" class="text text-danger"></p>
+            <p id="error-letter-name" class="text text-danger"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>Password</p>
+            <input class="form-control" id="password" type="password" />
+            <p id="error-required-password" class="text text-danger"></p>
+          </div>
+          <div class="col-6">
+            <p>Phone Number</p>
+            <input class="form-control" id="phone" />
+            <p id="error-required-phone" class="text text-danger"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>Confirm password</p>
+            <input class="form-control" id="confirmPassword" type="password" />
+            <p id="error-required-confirmPassword" class="text text-danger"></p>
+            <p id="error_value_confirmPassword" class="text text-danger"></p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="form-input mb-3" id="gender">
+              Gender:
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="male"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Man
+              </label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="female"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Woman
+              </label>
 
-    <!-- Related Products -->
-    <div class="related-products container">
-      <div class="relatedContent text-center">
-        <h2 class>Related Product</h2>
-      </div>
-      <div id="relatedProducts" class="row"></div>
+              <p id="gender-alert" class="text-danger ms-1"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-2">
+          <button class="btn btn-success" id="btnSubmitForm" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
-
-    <!-- Footer -->
     <footer class="mt-5">
       <div class="pt-2">
         <div class="container d-flex justify-content-evenly">
@@ -156,14 +215,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <!--Axios-->
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
-      integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+      integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./product-detail.js"></script>
   </body>
 </html>
